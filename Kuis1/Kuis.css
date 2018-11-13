@@ -1,0 +1,33 @@
+table{
+    text-align: center;
+    margin-left: 15%;
+}
+th{
+    border-bottom: 1px solid black;
+}
+
+body{
+    text-align:center;
+}
+
+p{
+
+}
+
+.tabel{
+    margin-bottom: 40px;
+}
+
+.biasa{
+    text-align: left;
+    margin-left: 25%;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+button{
+    width:100px;
+    height: 20px;
+}

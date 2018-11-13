@@ -1,0 +1,9 @@
+METHOD KONSTRUKTOR 
+
+konstrutor sama dengan nama mainnnya
+untuk membedakan konstruktor dengan yang lainnya maka pembedanya adalah jumlah parameter, urutan type data, 
+
+modifier 
+- public
+- Protected
+- Private

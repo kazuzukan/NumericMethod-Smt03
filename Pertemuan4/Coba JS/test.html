@@ -1,0 +1,52 @@
+<html>
+<head> </head>
+<SCRIPT language="Javascript">
+function test () {
+    var nilai1 = document.getElementById("T1").value;
+    var nilai2 = document.getElementById("T2").value;
+    var nilai3 = document.getElementById("T3").value;
+    var nilai4 = (parseFloat(nilai1) + parseFloat(nilai2) + parseFloat(nilai3))/3;
+
+    if (nilai4 <= 40)
+        document.kirim.T4.value= "E";
+    
+   else if (nilai4 > 40 && nilai4 <= 55){
+        document.kirim.T4.value= "D";
+   }
+
+    else if (nilai4 > 55 && nilai4 <= 60){
+        document.kirim.T4.value= "C";
+    }
+    
+    else if (nilai4 > 60 && nilai4 <= 65){
+        document.kirim.T4.value= "BC";
+    }        
+
+    else if(nilai4 > 65 && nilai4 <= 70){
+        document.kirim.T4.value= "B";
+    }
+
+    else if (nilai4 > 70 && nilai4 <= 80){
+        document.kirim.T4.value= "AB";
+    }
+
+    else if (nilai4 > 80 && nilai4 <= 100){
+        document.kirim.T4.value= "A";
+    }
+    
+}
+</SCRIPT>
+<body>
+<form method="POST" name="kirim">
+    <p>
+        Masukan Nilai Tugas : <input type="text" id="T1" size="20"> <br>
+        Masukan Nilai UTS : <input type="text" id="T2" size="20"> <br>
+        Masukan Nilai UAS : <input type="text" id="T3" size="20"> <br>
+        hasil konversi : <input type="text" id="T4" size="20">
+    </p>
+    <p>
+        <input type="button" value="konversi" name="B1" onclick=test()>
+    </p>
+</form>
+</body>
+</html>

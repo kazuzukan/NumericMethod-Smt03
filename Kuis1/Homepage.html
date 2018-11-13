@@ -1,0 +1,155 @@
+<html>
+<head>
+    <title> Beli Pulsa </title>
+    <!-- style CSS -->
+    <link rel="stylesheet" href="Kuis.css">
+    <!-- Js -->
+    <link rel="stylesheet" href="Kuis.js">
+    <script>
+        // OUTPUT
+        var hp;
+      function munculharga(){
+        var telp = document.getElementById("itelp").value;
+        var op = document.getElementById("iop").value;
+        var nop = document.getElementById("harga").value;
+        
+        if (op == "TKL"){
+          if(nop == 1){
+            hp = 25500;
+          }
+          else if(nop == 2){
+            hp = 40200;
+          }
+          else if(nop == 3){
+            hp = 50200;
+          }
+          else if(nop == 4){
+            hp = 100200;
+          }
+          else if(nop == 5){
+            hp = 150200;
+          }
+          else if(nop == 6){
+            hp = 200200;
+          }
+        }
+
+        else if (op == "XX"){
+          if(nop == 1){
+            hp = 15500;
+          }
+          else if(nop == 2){
+            hp = 25500;
+          }
+          else if(nop == 3){
+            hp = 49500;
+          }
+          else if(nop == 4){
+            hp = 99500;
+          }
+          else if(nop == 5){
+            hp = 148500;
+          }
+          else if(nop == 6){
+            hp = 197500;
+          }
+        }
+        
+        document.getElementById("report").innerHTML = (" Harga Pulsa : ") + (hp); 
+      }
+
+    </script>
+
+</head>
+<body>
+<h1> Web Pembelian Pulsa </h1>
+<!-- Daftar Harga  -->
+<div class="tabel">
+    <table style="width:70%">
+        <tr>
+          <th>OPERATOR-TKL</th>
+          <th>            </th>
+          <th>OPERATOR-XX </th>
+          <th>            </th>
+        </tr>
+        <tr>
+          <td> Pulsa </td>
+          <td> Harga </td>
+          <td> Pulsa </td>
+          <td> Harga </td>
+        </tr>
+        <tr>
+          <td> 25.000 </td>
+          <td> 25.200 </td>
+          <td> 15.000 </td>
+          <td> 15.500 </td>
+        </tr>
+        <tr>
+          <td> 40.000 </td>
+          <td> 40.200 </td>
+          <td> 25.000 </td>
+          <td> 25.500 </td>
+        </tr>
+        <tr>
+          <td> 50.000 </td>
+          <td> 50.200 </td>
+          <td> 50.000 </td>
+          <td> 49.500 </td>
+        </tr>
+        <tr>
+          <td> 100.000 </td>
+          <td> 100.200 </td>
+          <td> 100.000 </td>
+          <td> 99.500 </td>
+        </tr>
+        <tr>
+          <td> 150.000 </td>
+          <td> 150.200 </td>
+          <td> 150.000 </td>
+          <td> 148.500 </td>
+        </tr>
+        <tr>
+          <td> 200.000 </td>
+          <td> 200.200 </td>
+          <td> 200.000 </td>
+          <td> 197.500 </td>
+        </tr>
+      </table>
+    </div>
+    
+    <!-- INPUT -->
+    <div class="biasa">
+        Nama Operator : 
+        <select id="iop" >
+            <option value="TKL">TKL</option>
+            <option value="XX">XX</option>
+        </select> 
+
+        Nomor harga : 
+        <select id="harga">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select> <br>
+    
+       <form method="POST" name="kirim">
+        <p>
+          Nomor Telepon : <input type="text" id="itelp" size="20" placeholder=" +62"> <br> <br>
+        </p>
+      </form>
+      <div>
+        <button type="text" id="B1" value="Pay"  onclick=munculharga()>
+      </div>
+       <p> 
+         <div id="report">
+            Pilih Paket : 
+         </div>
+
+       </p>
+        
+</body>
+
+</html>
